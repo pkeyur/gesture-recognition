@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.csulb.edu.gesturerecognition.AddressActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/headerLayout"
+        android:background="@color/primary_light">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:id="@+id/addressIcon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addressType"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/addressIcon"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text=""
+                />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAddress"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginTop="20dp"
+        android:hint = "@string/enter_address"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_address"
+        android:id="@+id/saveAddress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtAddress"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/font_text_size"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape"/>
+</RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
